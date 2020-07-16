@@ -1,0 +1,24 @@
+/* components/lyric/lyric.js.wxss */
+.lyric-scroll{
+  margin-top: 100rpx;
+  width: 100%;
+  height: 100%;
+  height: 70%;
+  color: #ccc;
+  font-size: 32rpx;
+}
+
+.lyric-panel {
+  text-align: center;
+  margin-top: 36%;
+  height: 385rpx;
+}
+
+.lyric{
+  min-height: 64rpx;
+}
+
+.hightlight-lyric {
+  transition: color .5s;
+  color: #d43c33;
+}

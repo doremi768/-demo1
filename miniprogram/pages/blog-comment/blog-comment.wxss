@@ -1,0 +1,53 @@
+/* miniprogram/pages/blog-comment/blog-comment.wxss */
+.tab{
+  margin-top: 20rpx;
+  padding: 15rpx;
+  padding-bottom: 0;
+  background-color: #fff;
+}
+.tab-item{
+  color: #363636;
+  padding-bottom: 20rpx;
+}
+
+
+.comment-list{
+  margin-bottom: 100rpx;
+  background-color: #fff;
+  
+}
+.comment{
+  min-height: 100rpx;
+  padding: 15rpx;
+  border-top: 1px solid	#CFCFCF;
+
+}
+.comment-title{
+  margin-top: 10rpx;
+  /* padding-top: 10rpx; */
+}
+.comment-nickname{
+  vertical-align: 25rpx;
+}
+.comment-img{
+  width: 64rpx;
+  height: 64rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+}
+
+.comment-content{
+  margin: 20rpx 20rpx;
+}
+
+.comment-time{
+  margin: 10rpx 0;
+  font-size: 24rpx;
+  color: #939393;
+}
+
+.blog-ctrl{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

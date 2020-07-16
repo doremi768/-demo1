@@ -1,0 +1,72 @@
+/* components/blog-ctrl/blog-ctrl.wxss */
+.ctrl{
+  display: flex;
+  align-items: center;
+  background: #fff;
+  /* height: 100%; */
+}
+
+.ctrl-item{
+  flex: 1;
+  text-align: center;
+  color: rgba(40,47,60,.8);
+  font-size: 26rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.ctrl-item .icon{
+  margin-right: 12rpx;
+}
+.icon-pinglun{
+  font-size: 30rpx;
+}
+.icon-fenxiang1{
+  font-size: 36rpx;
+}
+.ctrl-item .share-text {
+  font-size: 30rpx;
+}
+
+.comment-content{
+ text-align: left;
+ width: 530rpx !important;
+ padding: 25rpx 0 20rpx 40rpx;
+ position: relative;
+
+}
+
+.form-ctrl .send{
+  position: absolute;
+  right: 40rpx;
+  bottom: 40rpx;
+  width: 115rpx !important;
+  min-height: 55rpx !important;
+  line-height: 50rpx;
+  padding: 0;
+  background-color: #d43c33;
+  color: #fff;
+  font-size: 25rpx;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 10rpx;
+}
+
+.share-btn{
+  background-color: #fff;
+  color: rgba(40,47,60,0.8);
+  border: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+.share-btn::after{
+  display: none;
+}
+.share-hover::after{
+  border: 0;
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "y-progress-bar": "../../components/progress-bar/progress-bar.js",
+    "y-lyric": "../../components/lyric/lyric.js"
+  },
+  "disableScroll": true
+}

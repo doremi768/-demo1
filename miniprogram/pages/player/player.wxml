@@ -1,0 +1,35 @@
+<!--pages/player/player.wxml-->
+<view class="player-container" style="background: url({{picUrl}}) center/cover no-repeat"></view>
+<view class="player-mask"></view>
+
+<view class="play-info">
+<!-- 封面信息 -->
+  <!-- 指针，如果在播放，就让指针旋转到唱片上 -->
+  <view class="player-disc {{isPlaying ? 'play' : ''}}" bind:tap="onChangeLyricShow" hidden="{{isLyricShow}}">
+    <image class="player-img rotation {{isPlaying ? '' : 'rotation-paused'}}" src="{{picUrl}}"></image>
+  </view>
+
+<!-- 歌词 -->
+<y-lyric class="lyric" isLyricShow="{{!isLyricShow}}" bind:tap="onChangeLyricShow"
+lyric="{{lyric}}"
+/>
+
+<!-- 进度条 -->
+<view class="progress-bar">
+<!-- 自定义事件，实现自动播放下一首 -->
+<!-- 触发 timeUpdata，调用名为timeUpdata的事件-->
+<y-progress-bar bind:musicEnd="next" bind:timeUpdata="timeUpdata"
+bind:musicPlay="onPlay"
+bind:musicPause="onPause"
+isSame="{{isSame}}"
+/>
+</view>
+<!-- 控制面板 -->
+<view class="control">
+  <text class="iconfont icon-prev1" bind:tap="prev"></text>
+  <!-- 判断当前是否在播放 -->
+  <text class="iconfont {{isPlaying? 'icon-zantingtingzhi' : 'icon-bofang'}}"
+  bind:tap="togglePlaying"></text>
+  <text class="iconfont icon-prev" bind:tap="next"></text>
+</view>
+</view>

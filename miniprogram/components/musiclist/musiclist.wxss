@@ -1,0 +1,46 @@
+/* components/musiclist.wxss */
+.musiclist-container{
+  display: flex;
+  padding: 14rpx 20rpx;
+  align-items: center
+}
+
+.musiclist-index{
+  color: #888;
+  font-size: 34rpx;
+  width: 80rpx;
+}
+
+.musiclist-info{
+  flex-grow: 1;
+  width: 0;
+}
+
+.musiclist-name{
+  font-size: 34rpx;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.musiclist-alia{
+  margin-left: 10rpx;
+  display: inline-block;
+  width: 450rpx;
+  color: #ccc;
+  font-size: 30rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.musiclist-singer{
+  margin-top: 10rpx;
+  font-size: 24rpx;
+  color: #8B8682;
+}
+
+/* 点击之后变成红色 */
+.playing view, .playing text{
+  color: #d43c33;
+}

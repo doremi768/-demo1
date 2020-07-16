@@ -1,0 +1,23 @@
+<!--components/progress-bar/progress-bar.js.wxml-->
+<view class="container">
+  <text class="time">{{showTime.currenTime}}</text>
+    <view class="control">
+    <!-- 这个小程序自带组件表示可移动区域 -->
+      <movable-area class="movable-area">
+        <!-- 
+          可滑动拖拽的一个容器，必须在 movable-area 中，而且必须是直接的孩子节点
+         direction： horizontal  移动的方向 :水平移动
+         damping = "1000"  阻力系数，如果这个值滑动的越大，滑动的就越快
+         -->
+        <movable-view direction="horizontal" class="movable-view"
+        damping = "1000" x="{{movableDis}}" bindchange="onChange"
+        bindtouchend="onTouchEnd"
+        />
+        <!-- 进度组件 -->
+        <progress stroke-width="4" backgroundColor="#969696"
+        activeColor="#fff" percent="{{progress}}" class="proGress"
+        />
+      </movable-area>
+    </view>
+  <text class="time">{{showTime.totalTime}}</text>
+</view>
